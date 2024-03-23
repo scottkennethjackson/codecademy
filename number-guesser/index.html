@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Scott Kenneth Jackson">
+    <meta name="description" content="A simple guessing game where the user and the computer each try to guess the outcome of random dice rolls">
+
+    <title>Dice Guessing Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <script src="https://kit.fontawesome.com/b974d1263b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <h1>Dice Guessing Game</h1>
+        <p class="subtitle">Closest guess wins!</p>
+      </header>
+
+      <main>
+        <div class="rounds">
+          <p class="round-label">Round <span id="round-number">1</span></p>
+          <p class="guess-label">Roll: <span id="target-number">?</span></p>
+        </div>
+
+        <div class="guessing-area">
+          <div class="guess computer-guess">
+            <div class="guess-title">
+              <p class="guess-label">Computer</p>
+              <p class="score-label">Score: <span id="computer-score">0</span></p>
+            </div>
+            <p id="computer-guess">?</p>
+            <p class="winning-text" id="computer-wins"></p>
+          </div>
+          <div class="guess human-guess">
+            <div class="guess-title">
+              <p class="guess-label">You</p>
+              <p class="score-label">Score: <span id="human-score">0</span></p>
+            </div>
+            <input type="number" id="human-guess" min=1 max=6 value=1>
+            <div class="number-controls">
+              <button class="number-control left" id="subtract" disabled>-</button>
+              <button class="number-control right" id="add">+</button>
+            </div>
+            <button class="button" id="guess"><Table>Guess</Table></button>
+          </div>
+        </div>
+
+        <div class="next-round-container">
+          <button class="button" id="next-round" disabled>Play Again?</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <script src="./scripts/app.js"></script>
+      <script src="./scripts/game.js"></script>
+    </footer>
+  </body>
+</html>
