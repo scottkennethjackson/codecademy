@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Scott Kenneth Jackson">
+        <meta name="description" content="An Angular web application which searches nearby points of interest based on the user's geolocation.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Nearby</title>
+
+        <link rel="stylesheet" href="./libraries/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="./libraries/leaflet/leaflet.css" type="text/css">
+        <link rel="stylesheet" href="./styles/nearby.css" type="text/css">
+
+        <script src="./libraries/js/angular.min.js"></script>
+        <script src="./libraries/js/angular-route.min.js"></script>
+    </head>
+
+    <body ng-app="NearbyApp">
+        <nav class="navbar shadow">
+            <div class="container">
+                <h1 class="navbar-brand"><a href="#/main" class="nav-link"><i class="fa-regular fa-location-dot"></i> Nearby</a></h1>
+                <a href="#/search" class="nav-link"><i class="fa-regular fa-magnifying-glass"></i> Search</a>
+            </div>
+        </nav>
+        <div ng-view></div>
+    </body>
+
+    <footer>
+        <script src="./scripts/nearby.js"></script>
+        <script src="./scripts/controllers/MainController.js"></script>
+        <script src="./scripts/controllers/SearchController.js"></script>
+        <script src="./libraries/js/all.min.js"></script>    
+        <script src="./libraries/leaflet/leaflet.js"></script>
+        <script src="./libraries/js/angular-leaflet-directive.min.js"></script>
+        <script src="./scripts/services/places.js"></script>
+        <script src="./scripts/services/helpers.js"></script>
+    </footer>
+</html>
