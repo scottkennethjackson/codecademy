@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Scott Kenneth Jackson">
+    <meta name="description" content="An homepage for a fictional tattoo studio">
+
+    <title>Main Street Tattoo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Padauk&display=swap">
+
+    <link rel="stylesheet" href="https://use.typekit.net/oyj2rcm.css">
+
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#team">Meet the Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <img src="./images/banner.png" class="background-img" alt="Woman tattooing a man's chest">
+        <span class="filter"></span>
+        <img src="./images/logo.png" class="logo" alt="Bloom Street Tattoo">
+    </div>
+  </header>
+  <main>
+    <section id="about">
+        <h2 class="title">About Us</h2>
+        <p>Welcome to Main Street Tattoo, where ink meets narrative in the heart of creativity. Tucked away on the edge of the The Village, our studio breathes life into stories through the artistry of our diverse team. From traditional to avant-garde, our talented tattooists, led by the visionary Mai, transform skin into living canvases. With roots in global aesthetics, Main Street Tattoo embodies a fusion of tradition and contemporary expression. Step into our haven, where every tattoo is a chapter, and Main Street becomes a gallery of personal narratives. Join us in the symphony of ink, where tales unfold under the skilled hands of our passionate artists.</p>
+        <img src="./images/sun.png" class="break" alt="Sun illustration">
+    </section>
+    <section id="team">
+        <h2 class="title">Meet the Team</h2>
+        <div class="gallery">
+            <div class="staff-img">
+                <span class="backdrop"></span>
+                <img src="./images/staff1.png" class="snap" alt="Mai">
+            </div>
+            <div class="staff-info hidden-x">
+                <h3 class="header">Mai</h3>
+                <p class="bio">Mai's art is a harmonious blend of tradition and modernity. With delicate precision, she weaves cultural tapestries, creating tattoos that resonate with both personal narratives and the echoes of ancient traditions.</p>
+            </div>
+            <div class="staff-img">
+                <span class="backdrop"></span>
+                <img src="./images/staff2.png" class="snap" alt="Dirk">
+            </div>
+            <div class="staff-info hidden-x">
+                <h3 class="header">Dirk</h3>
+                <p class="bio">Hailing from the gritty streets of Brooklyn, Dirk's art is a fusion of urban edge and timeless symbolism. Each piece telling a raw, unfiltered story—a visual symphony that echoes the pulse of the city’s heartbeat.</p>
+            </div>
+            <div class="staff-img">
+                <span class="backdrop"></span>
+                <img src="./images/staff3.png" class="snap" alt="Elouise">
+            </div>
+            <div class="staff-info hidden-x">
+                <h3 class="header">Elouise</h3>
+                <p class="bio">Dancing between ethereal and edgy, Elouise's art is a testament to her eclectic influences. With a needle as her paintbrush, she crafts visual poetry on skin, infusing each piece with a touch of whimsy and a dash of rebellion.</p>
+            </div>
+        </div>
+        <div class="stats hidden-y">
+            <div class="staff-info">
+                <h3 class="header">Mai</h3>
+                <p class="bio">Mai's art is a harmonious blend of tradition and modernity. With delicate precision, she weaves cultural tapestries, creating tattoos that resonate with both personal narratives and the echoes of ancient traditions.</p>
+            </div>
+            <div class="staff-info">
+                <h3 class="header">Dirk</h3>
+                <p class="bio">Hailing from the gritty streets of Brooklyn, Dirk's art is a fusion of urban edge and timeless symbolism. Each piece telling a raw, unfiltered story—a visual symphony that echoes the pulse of the city’s heartbeat.</p>
+            </div>
+            <div class="staff-info">
+                <h3 class="header">Elouise</h3>
+                <p class="bio">Dancing between ethereal and edgy, Elouise's art is a testament to her eclectic influences. With a needle as her paintbrush, she crafts visual poetry on skin, infusing each piece with a touch of whimsy and a dash of rebellion.</p>
+            </div>
+        </div>
+        <img src="./images/sun.png" class="break" alt="Sun illustration">
+    </section>
+    <section id="contact">
+        <h2 class="title">Contact</h2>
+        <form>
+            <fieldset>
+                <label>Name</label>
+                <input type="text" name="name" id="name" required>
+                <label>Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="artist">Select Artist</label>
+                <select name="srtist" id="artist" required>
+                    <option value="">--</option>
+                    <option value="mai">Mai</option>
+                    <option value="dirk">Dirk</option>
+                    <option value="elouise">Elouise</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </section>
+  </main>
+</html>
