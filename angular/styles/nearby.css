@@ -1,0 +1,76 @@
+html,
+body,
+.navbar,
+#map_canvas {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* nearby.html */
+.navbar {
+    height: 40px;
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(203, 43, 57);
+}
+
+.navbar-brand {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus  {
+    color: white;
+    text-transform: uppercase;
+}
+
+/* main.html */
+#map_canvas {
+    position: relative;
+}
+
+.angular-leaflet-map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* search.html */
+.search {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(215, 208, 202);
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+input {
+    width: 290px;
+    margin: auto;
+    padding: 5px;
+}
+
+button {
+    width: 145px;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(42, 78, 160);
+}
+
+button:active {
+    background-color: rgb(0, 56, 130);
+}
