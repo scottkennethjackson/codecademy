@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+nav {
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+
+h2 {
+    color: salmon;
+}
+
+.logo {
+    height: 50px;
+}
+
+.links a {
+    color: seashell;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a:active {
+    color: salmon;
+}
+
+.links a:nth-child(2) {
+    margin: 0 10px;
+}
+
+#mission {
+    padding-top: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-background {
+    height: 700px;
+    width: 1200px;
+    opacity: 0.4;
+}
+
+.mission-blurb {
+    height: 120px;
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#featured {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 69px;
+}
+
+.featured-blurb {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-teas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.tea-card {
+    margin: 10px;
+}
+
+.thumbnail {
+    height: 200px;
+    width: 300px;
+}
+
+.tea {
+    padding-top: 10px;
+}
+
+#locations {
+    padding-top: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-blurb {
+    position: absolute;
+}
+
+.locations-background {
+    height: 500px;
+    max-height: 1000px;
+    width: 1200px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.locations-blurb {
+    display: flex;
+    flex-direction: column;
+}
+
+.locations-info {
+    display: flex;
+    justify-content: center;
+}
+
+.location-card {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 20px;
+    background-color: black;
+}
+
+.location-card p {
+    margin-top: 20px;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5 {
+    margin-top: 20px;
+}
+
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.underline:active {
+    color: salmon;
+}
+
+@media screen and (max-width: 600px) {
+    .links {
+        display: none;
+    }
+}
