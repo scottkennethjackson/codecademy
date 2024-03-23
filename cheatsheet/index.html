@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Scott Kenneth Jackson">
+        <meta name="description" content="A reference cheat sheet containing information about individual HTML elements, their tags, function and common usage.">
+
+        <title>HTML Cheatsheet</title>
+
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#a">A</a></li>
+                <li><a href="#b">B</a></li>
+                <li><a href="#c">C</a></li>
+                <li><a href="#d">D</a></li>
+                <li><a href="#e">E</a></li>
+                <li><a href="#f">F</a></li>
+                <li><a href="#f">G</a></li>
+                <li><a href="#h">H</a></li>
+                <li><a href="#i">I</a></li>
+                <li><a href="#i">J</a></li>
+                <li><a href="#k">K</a></li>
+                <li><a href="#l">L</a></li>
+                <li><a href="#m">M</a></li>
+                <li><a href="#n">N</a></li>
+                <li><a href="#o">O</a></li>
+                <li><a href="#p">P</a></li>
+                <li><a href="#q">Q</a></li>
+                <li><a href="#r">R</a></li>
+                <li><a href="#s">S</a></li>
+                <li><a href="#t">T</a></li>
+                <li><a href="#u">U</a></li>
+                <li><a href="#v">V</a></li>
+                <li><a href="#w">W</a></li>
+                <li><a href="#w">X</a></li>
+                <li><a href="#w">Y</a></li>
+                <li><a href="#w">Z</a></li>
+            </ul>
+        </nav>
+        <h1>HTML Elements</h1>
+        <div class="blurb">
+            <p><strong>HTML</strong> (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (<strong>CSS</strong>) or functionality/behavior (<strong>JavaScript</strong>).</p>
+            <p>HTML uses "markup" to annotate text, images, and other content for display in the Web browser. This markup consists of special characters called "<strong>elements</strong>", which are instructions that tell the browser how to display content to the user.</p>
+            <p>Elements are made up of three parts: an opening tag, the content itself, and a closing tag. The two <strong>tags</strong> are like containers - they indicate the tag's purpose and instruct the browser about the type of information that lies between them. The <strong>content</strong> is what gets displayed to the user.</p>
+            <p>Below is a list of HTML tags, with information about their functionality and usage:</p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="a">
+                    <td class="tag">&lt;a&gt;</td>
+                    <td>Anchor</td>
+                    <td>Creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;abbr&gt;</td>
+                    <td>Abbreviation</td>
+                    <td>Represents an abbreviation or acronym.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;address&gt;</td>
+                    <td>Contact Address</td>
+                    <td>Indicates that the enclosed HTML provides contact information for a person or people, or for an organization.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;area&gt;</td>
+                    <td>Image Map Area</td>
+                    <td>Defines an area inside an image map that has predefined clickable areas. An image map allows geometric areas on an image to be associated with hypertext links.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;article&gt;</td>
+                    <td>Article Contents</td>
+                    <td>Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;aside&gt;</td>
+                    <td>Aside</td>
+                    <td>Represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;audio&gt;</td>
+                    <td>Embed Audio</td>
+                    <td>Used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <span class="tag">&lt;source&gt;</span> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.</td>
+                </tr>
+                <tr id="b">
+                    <td class="tag">&lt;b&gt;</td>
+                    <td>Bring Attention To</td>
+                    <td>Used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use <span class="tag">&lt;b&gt;</span> for styling text or granting importance. If you wish to create boldface text, you should use the CSS font-weight property. If you wish to indicate an element is of special importance, you should use the <span class="tag">&lt;strong&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;base&gt;</td>
+                    <td>Document Base URL</td>
+                    <td>Specifies the base URL to use for all relative URLs in a document. There can be only one <span class="tag">&lt;base&gt;</span> element in a document.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;bdi&gt;</td>
+                    <td>Bidirectional Isolate</td>
+                    <td>Tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. It's particularly useful when a website dynamically inserts some text and doesn't know the directionality of the text being inserted.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;bdo&gt;</td>
+                    <td>Bidirectional Text Override</td>
+                    <td>Overrides the current directionality of text, so that the text within is rendered in a different direction.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;blockquote&gt;</td>
+                    <td>Block Quotation</td>
+                    <td>Indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the <cite> element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;body&gt;</td>
+                    <td>Document Body</td>
+                    <td>Represents the content of an HTML document. There can be only one <span class="tag">&lt;body&gt;</span> element in a document.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;br&gt;</td>
+                    <td>Line Break</td>
+                    <td>Produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;button&gt;</td>
+                    <td>Button</td>
+                    <td>An interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it then performs an action, such as submitting a form or opening a dialog.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;button&gt;</td>
+                    <td>Canvas</td>
+                    <td>Used with either the canvas scripting API or the WebGL API to draw graphics and animations.</td>
+                </tr>
+                <tr id ="c">
+                    <td class="tag">&lt;caption&gt;</td>
+                    <td>Table Caption</td>
+                    <td>Specifies the caption (or title) of a table.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;cite&gt;</td>
+                    <td>Citation</td>
+                    <td>Used to mark up the title of a cited creative work. The reference may be in an abbreviated form according to context-appropriate conventions related to citation metadata.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;code&gt;</td>
+                    <td>Inline Code</td>
+                    <td>Displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;col&gt;</td>
+                    <td>Table Column</td>
+                    <td>Defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <span class="tag">&lt;colgroup&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;colgroup&gt;</td>
+                    <td>Table Column Group</td>
+                    <td>Defines a group of columns within a table.</td>
+                </tr>
+                <tr id="d">
+                    <td class="tag">&lt;data&gt;</td>
+                    <td>Data</td>
+                    <td>Links a given piece of content with a machine-readable translation. If the content is time or date-related, the <span class="tag">&lt;time&gt;</span> element must be used.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;datalist&gt;</td>
+                    <td>Data List</td>
+                    <td>Contains a set of <span class="tag">&lt;option&gt;</span> elements that represent the permissible or recommended options available to choose from within other controls.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dd&gt;</td>
+                    <td>Description Details</td>
+                    <td>Provides the description, definition, or value for the preceding term (<span class="tag">&lt;dt&gt;</span>) in a description list (<span class="tag">&lt;dl&gt;</span>).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;del&gt;</td>
+                    <td>Deleted Text</td>
+                    <td>Represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The <span class="tag">&lt;ins&gt;</span> element can be used for the opposite purpose: to indicate text that has been added to the document.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;details&gt;</td>
+                    <td>Details</td>
+                    <td>Creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the <span class="tag">&lt;summary&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dfn&gt;</td>
+                    <td>Definition</td>
+                    <td>Used to indicate the term being defined within the context of a definition phrase or sentence. The ancestor <span class="tag">&lt;p&gt;</span> element, the <span class="tag">&lt;dt&gt;</span>/<span class="tag">&lt;dd&gt;</span> pairing, or the nearest <span class="tag">&lt;section&gt;</span> ancestor of the <span class="tag">&lt;dfn&gt;</span> element, is considered to be the definition of the term.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dialog&gt;</td>
+                    <td>Dialog</td>
+                    <td>Represents a dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;div&gt;</td>
+                    <td>Content Division</td>
+                    <td>The generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dl&gt;</td>
+                    <td>Description List</td>
+                    <td>Represents a description list. The element encloses a list of groups of terms (specified using the <span class="tag">&lt;dt&gt;</span> element) and descriptions (provided by <span class="tag">&lt;dd&gt;</span> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dt&gt;</td>
+                    <td>Description Term</td>
+                    <td>Specifies a term in a description or definition list, and as such must be used inside a <span class="tag">&lt;dl&gt;</span> element. It is usually followed by a <span class="tag">&lt;dd&gt;</span> element; however, multiple <span class="tag">&lt;dt&gt;</span> elements in a row indicate several terms that are all defined by the immediate next <span class="tag">&lt;dd&gt;</span> element.</td>
+                </tr>
+                <tr id="e">
+                    <td class="tag">&lt;em&gt;</td>
+                    <td>Emphasis</td>
+                    <td>Marks text that has stress emphasis. The <span class="tag">&lt;em&gt;</span> element can be nested, with each level of nesting indicating a greater degree of emphasis.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;embed&gt;</td>
+                    <td>Embed External Content</td>
+                    <td>Embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in.</td>
+                </tr>
+                <tr id="f">
+                    <td class="tag">&lt;fieldset&gt;</td>
+                    <td>Field Set</td>
+                    <td>Used to group several controls as well as labels (<span class="tag">&lt;label&gt;</span>) within a web form.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;figcaption&gt;</td>
+                    <td>Figure Caption</td>
+                    <td>Represents a caption or legend describing the rest of the contents of its parent <span class="tag">&lt;figure&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;figure&gt;</td>
+                    <td>Figure</td>
+                    <td>Represents self-contained content, potentially with an optional caption, which is specified using the <span class="tag">&lt;figcaption&gt;</span> element. The figure, its caption, and its contents are referenced as a single unit.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;footer&gt;</td>
+                    <td>Footer</td>
+                    <td>Represents a footer for its nearest ancestor sectioning content or sectioning root element. A <span class="tag">&lt;footer&gt;</span> typically contains information about the author of the section, copyright data or links to related documents.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;form&gt;</td>
+                    <td>Form</td>
+                    <td>Represents a document section containing interactive controls for submitting information.</td>
+                </tr>
+                <tr id="h">
+                    <td class="tag">&lt;h1&gt;</td>
+                    <td>Heading</td>
+                    <td>Rrepresent six levels of section headings. <span class="tag">&lt;h1&gt;</span> is the highest section level and <span class="tag">&lt;h6&gt;</span> is the lowest. By default, all heading elements create a block-level box in the layout, starting on a new line and taking up the full width available in their containing block.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;head&gt;</td>
+                    <td>Document Metadata (Header)</td>
+                    <td>Contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;header&gt;</td>
+                    <td>Header</td>
+                    <td>Represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;hgroup&gt;</td>
+                    <td>Heading Group</td>
+                    <td>Represents a heading and related content. It groups a single <span class="tag">&lt;h1&gt;</span> to <span class="tag">&lt;h6&gt;</span> element with one or more <span class="tag">&lt;p&gt;</span> elements.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;hr&gt;</td>
+                    <td>Horizontal Rule</td>
+                    <td>Represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;html&gt;</td>
+                    <td>Root</td>
+                    <td>Represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.</td>
+                </tr>
+                <tr id="i">
+                    <td class="tag">&lt;i&gt;</td>
+                    <td>Idiomatic Text</td>
+                    <td>Represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, taxonomical designations, among others. Historically, these have been presented using italicized type, which is the original source of the <span class="tag">&lt;i&gt;</span> naming of this element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;iframe&gt;</td>
+                    <td>Inline Frame</td>
+                    <td>Represents a nested browsing context, embedding another HTML page into the current one.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;img&gt;</td>
+                    <td>Image</td>
+                    <td>Embeds an image into the document.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;input&gt;</td>
+                    <td>Input</td>
+                    <td>Used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <span class="tag">&lt;input&gt;</span> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;ins&gt;</td>
+                    <td>Insert Text</td>
+                    <td>Represents a range of text that has been added to a document. You can use the <span class="tag">&lt;del&gt;</span> element to similarly represent a range of text that has been deleted from the document.</td>
+                </tr>
+                <tr id="k" >
+                    <td class="tag">&lt;kbd&gt;</td>
+                    <td>Keyboard Input</td>
+                    <td>Represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a <span class="tag">&lt;kbd&gt;</span> element using its default monospace font, although this is not mandated by the HTML standard.</td>
+                </tr>
+                <tr id="l">
+                    <td class="tag">&lt;label&gt;</td>
+                    <td>Label</td>
+                    <td>Represents a caption for an item in a user interface.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;legend&gt;</td>
+                    <td>Legend</td>
+                    <td>Represents a caption for the content of its parent <span class="tag">&lt;fieldset&gt;</span>.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;li&gt;</td>
+                    <td>List Item</td>
+                    <td>Used to represent an item in a list. It must be contained in a parent element: an ordered list (<span class="tag">&lt;ol&gt;</span>), an unordered list (<span class="tag">&lt;ul&gt;</span>), or a menu (<span class="tag">&lt;menu&gt;</span>). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;link&gt;</td>
+                    <td>External Resource Link</td>
+                    <td>Specifies relationships between the current document and an external resource. This element is most commonly used to link to stylesheets, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.</td>
+                </tr>
+                <tr id="m">
+                    <td class="tag">&lt;main&gt;</td>
+                    <td>Main</td>
+                    <td>Represents the dominant content of the <span class="tag">&lt;body&gt;</span> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;map&gt;</td>
+                    <td>Image Map</td>
+                    <td>Used with <span class="tag">&lt;area&gt;</span> elements to define an image map (a clickable link area).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;mark&gt;</td>
+                    <td>Mark Text</td>
+                    <td>Represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;menu&gt;</td>
+                    <td>Menu</td>
+                    <td>Described in the HTML specification as a semantic alternative to <span class="tag">&lt;ul&gt;</span>, but treated by browsers (and exposed through the accessibility tree) as no different than <span class="tag">&lt;ul&gt;</span>. It represents an unordered list of items (which are represented by <span class="tag">&lt;li&gt;</span> elements).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;meta&gt;</td>
+                    <td>Metadata</td>
+                    <td>Represents metadata that cannot be represented by other HTML meta-related elements, like <span class="tag">&lt;base&gt;</span>, <span class="tag">&lt;link&gt;</span>, <span class="tag">&lt;script&gt;</span>, <span class="tag">&lt;style&gt;</span> or <span class="tag">&lt;title&gt;</span>.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;meter&gt;</td>
+                    <td>Meter</td>
+                    <td>Represents either a scalar value within a known range or a fractional value.</td>
+                </tr>
+                <tr id="n">
+                    <td class="tag">&lt;nav&gt;</td>
+                    <td>Navigation Section</td>
+                    <td>Represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;noscript&gt;</td>
+                    <td>No Script</td>
+                    <td>Defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.</td>
+                </tr>
+                <tr id="o">
+                    <td class="tag">&lt;object&gt;</td>
+                    <td>External Object</td>
+                    <td>Represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;ol&gt;</td>
+                    <td>Ordered List</td>
+                    <td>Represents an ordered list of items — typically rendered as a numbered list.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;optgroup&gt;</td>
+                    <td>Option Group</td>
+                    <td>Creates a grouping of options within a <span class="tag">&lt;select&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;option&gt;</td>
+                    <td>Option</td>
+                    <td>Used to define an item contained in a <span class="tag">&lt;select&gt;</span>, an <span class="tag">&lt;optgroup&gt;</span>, or a <span class="tag">&lt;datalist&gt;</span> element. As such, <span class="tag">&lt;option&gt;</span> can represent menu items in popups and other lists of items in an HTML document.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;output&gt;</td>
+                    <td>Output</td>
+                    <td>A container element into which a site or app can inject the results of a calculation or the outcome of a user action.</td>
+                </tr>
+                <tr id="p">
+                    <td class="tag">&lt;p&gt;</td>
+                    <td>Paragraph</td>
+                    <td>Represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;picture&gt;</td>
+                    <td>Picture</td>
+                    <td>Contains zero or more <span class="tag">&lt;source&gt;</span> elements and one <span class="tag">&lt;img&gt;</span> element to offer alternative versions of an image for different display/device scenarios.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;pre&gt;</td>
+                    <td>Preformatted Text</td>
+                    <td>Represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced, font. Whitespace inside this element is displayed as written.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;progress&gt;</td>
+                    <td>Progress Indicator</td>
+                    <td>Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;q&gt;</td>
+                    <td>Inline Quotation</td>
+                    <td>Indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the <span class="tag">&lt;blockquote&gt;</span> element.</td>
+                </tr>
+                <tr id="r">
+                    <td class="tag">&lt;rp&gt;</td>
+                    <td>Ruby Fallback Parenthesis</td>
+                    <td>Used to provide fall-back parentheses for browsers that do not support display of ruby annotations using the <span class="tag">&lt;ruby&gt;</span> element. One <span class="tag">&lt;rp&gt;</span> element should enclose each of the opening and closing parentheses that wrap the <span class="tag">&lt;rt&gt;</span> element that contains the annotation's text.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;rt&gt;</td>
+                    <td>Ruby Text</td>
+                    <td>Specifies the ruby text component of a ruby annotation, which is used to provide pronunciation, translation, or transliteration information for East Asian typography. The <span class="tag">&lt;rt&gt;</span> element must always be contained within a <span class="tag">&lt;ruby&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;ruby&gt;</td>
+                    <td>Ruby Annotation</td>
+                    <td>Represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters. It can also be used for annotating other kinds of text, but this usage is less common.</td>
+                </tr>
+                <tr id="s">
+                    <td class="tag">&lt;s&gt;</td>
+                    <td>Strikethrough</td>
+                    <td>Renders text with a strikethrough, or a line through it. Use the <span class="tag">&lt;s&gt;</span> element to represent things that are no longer relevant or no longer accurate. However, <span class="tag">&lt;s&gt;</span> is not appropriate when indicating document edits; for that, use the <span class="tag">&lt;del&gt;</span> and <span class="tag">&lt;ins&gt;</span> elements, as appropriate.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;samp&gt;</td>
+                    <td>Sample Output</td>
+                    <td>Used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;script&gt;</td>
+                    <td>Script</td>
+                    <td>Used to embed executable code or data; this is typically used to embed or refer to JavaScript code. The <span class="tag">&lt;script&gt;</span> element can also be used with other languages, such as WebGL's GLSL shader programming language and JSON.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;search&gt;</td>
+                    <td>Search</td>
+                    <td>A container representing the parts of the document or application with form controls or other content related to performing a search or filtering operation. The <span class="tag">&lt;search&gt;</span> element semantically identifies the purpose of the element's contents as having search or filtering capabilities. The search or filtering functionality can be for the website or application, the current web page or document, or the entire Internet or subsection thereof.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;section&gt;</td>
+                    <td>Section</td>
+                    <td>Represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;select&gt;</td>
+                    <td>Select</td>
+                    <td>Represents a control that provides a menu of options.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;slot&gt;</td>
+                    <td>Web Component Slot</td>
+                    <td>A placeholder inside a web component that you can fill with your own markup, which lets you create separate DOM trees and present them together.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;small&gt;</td>
+                    <td>Side Comment</td>
+                    <td>Represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from small to x-small.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;source&gt;</td>
+                    <td>Media or Image Source</td>
+                    <td>Specifies multiple media resources for the <span class="tag">&lt;picture&gt;</span>, the <span class="tag">&lt;audio&gt;</span> element, or the <span class="tag">&lt;video&gt;</span> element. It is a void element, meaning that it has no content and does not have a closing tag. It is commonly used to offer the same media content in multiple file formats in order to provide compatibility with a broad range of browsers given their differing support for image file formats and media file formats.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;span&gt;</td>
+                    <td>Content Span</td>
+                    <td>A generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <span class="tag">&lt;span&gt;</span> is very much like a <span class="tag">&lt;div&gt;</span> element, but <span class="tag">&lt;div&gt;</span> is a block-level element whereas a <span class="tag">&lt;span&gt;</span> is an inline-level element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;strong&gt;</td>
+                    <td>Strong Importance</td>
+                    <td>Indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;style&gt;</td>
+                    <td>Style Information</td>
+                    <td>Contains style information for a document, or part of a document. It contains CSS, which is applied to the contents of the document containing the <span class="tag">&lt;style&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;sub&gt;</td>
+                    <td>Subscript</td>
+                    <td>Specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;summary&gt;</td>
+                    <td>Disclosure Summary</td>
+                    <td>Specifies a summary, caption, or legend for a <span class="tag">&lt;details&gt;</span> element's disclosure box. Clicking the <span class="tag">&lt;summary&gt;</span> element toggles the state of the parent <span class="tag">&lt;details&gt;</span> element open and closed.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;sup&gt;</td>
+                    <td>Superscript</td>
+                    <td>Specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text.</td>
+                </tr>
+                <tr id="t">
+                    <td class="tag">&lt;table&gt;</td>
+                    <td>Table</td>
+                    <td>Represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;tbody&gt;</td>
+                    <td>Table Body</td>
+                    <td>Encapsulates a set of table rows (<span class="tag">&lt;tr&gt;</span> elements), indicating that they comprise the body of the table (<span class="tag">&lt;table&gt;</span>).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;td&gt;</td>
+                    <td>Table Data Cell</td>
+                    <td>Defines a cell of a table that contains data. It participates in the table model.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;template&gt;</td>
+                    <td>Content Template</td>
+                    <td>A mechanism for holding HTML that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;textarea&gt;</td>
+                    <td>Text Area</td>
+                    <td>Represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;tfoot&gt;</td>
+                    <td>Table Foot</td>
+                    <td>Defines a set of rows summarizing the columns of the table.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;th&gt;</td>
+                    <td>Table Header</td>
+                    <td>Defines a cell as the header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;thead&gt;</td>
+                    <td>Table Head</td>
+                    <td>Defines a set of rows defining the head of the columns of the table.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;time&gt;</td>
+                    <td>(Date) Time</td>
+                    <td>Represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;title&gt;</td>
+                    <td>Document Title</td>
+                    <td>Defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;tr&gt;</td>
+                    <td>Table Row</td>
+                    <td>Defines a row of cells in a table. The row's cells can then be established using a mix of <span class="tag">&lt;td&gt;</span> (data cell) and <span class="tag">&lt;th&gt;</span> (header cell) elements.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;track&gt;</td>
+                    <td>Embed Text Track</td>
+                    <td>Used as a child of the media elements, <span class="tag">&lt;audio&gt;</span> and <span class="tag">&lt;video&gt;</span>. It lets you specify timed text tracks (or time-based data), for example to automatically handle subtitles. The tracks are formatted in WebVTT format (.vtt files) — Web Video Text Tracks.</td>
+                </tr>
+                <tr id="u">
+                    <td class="tag">&lt;u&gt;</td>
+                    <td>Unarticulated Annotation (Underline)</td>
+                    <td>Represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;ul&gt;</td>
+                    <td>Unordered List</td>
+                    <td>Represents an unordered list of items, typically rendered as a bulleted list.</td>
+                </tr>
+                <tr id="v">
+                    <td class="tag">&lt;var&gt;</td>
+                    <td>Variable</td>
+                    <td>Represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;video&gt;</td>
+                    <td>Video Embed</td>
+                    <td>Embeds a media player which supports video playback into the document. You can use <span class="tag">&lt;video&gt;</span> for audio content as well, but the <span class="tag">&lt;audio&gt;</span> element may provide a more appropriate user experience.</td>
+                </tr>
+                <tr id="w">
+                    <td class="tag">&lt;wbr&gt;</td>
+                    <td>Line Break Opportunity</td>
+                    <td>Represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><a href="#" class="top">Back to the Top</a></td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
