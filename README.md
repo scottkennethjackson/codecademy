@@ -1,3 +1,3 @@
 # codecademy
 
-A collection of projects completed as part of Codecademy's various courses and career paths.
+A collection of projects created during completion of Codecademy's various courses and career paths
